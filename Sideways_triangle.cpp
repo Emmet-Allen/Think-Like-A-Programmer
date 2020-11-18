@@ -17,15 +17,31 @@ void SidewaysTriangle(){
     
 }
 
+void Playbutton() {
+int rows;
+int hashNumber;
 
-
-
-
+    for(rows = 1; rows <= 7; rows++){
+        for(hashNumber = 0; hashNumber <= rows - 1; hashNumber++){
+            std::cout << " " << "##" << " ";
+        }
+        std::cout << "#"; 
+        std::cout << " " << '\n';
+    }
+    for(rows = 0; rows <= 5; rows++){
+        for(hashNumber = 5; hashNumber > rows - 1; hashNumber--){
+            std::cout << " " << "##" << " ";
+        }
+        std::cout << "#"; 
+        std::cout << " " << '\n';
+    }
+}
 
 
 int main() {
 
-    SidewaysTriangle();
+    //SidewaysTriangle();
+    Playbutton();
     return 0;
     
 }
